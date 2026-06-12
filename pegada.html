@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal EcoAgro: Sustentabilidade e Gestão de Recursos Hídricos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <nav>
+            <button class="nav-btn active" onclick="navegar('page-intro', this)"><i class="fas fa-book-open"></i> Fundamentos</button>
+            <button class="nav-btn" onclick="navegar('page-agro', this)"><i class="fas fa-microchip"></i> Ciência do Campo</button>
+            <button class="nav-btn" onclick="navegar('page-calculator', this)"><i class="fas fa-tint"></i> Métrica Hídrica</button>
+            <button class="nav-btn" onclick="navegar('page-game', this); iniciarJogo();"><i class="fas fa-chess-knight"></i> Simulador</button>
+        </nav>
+        
+        <div id="page-intro" class="page active">
+            <div class="main-card">
+                <div class="card-header-img header-intro"></div>
+                <div class="card-content">
+                    <h1>A Pegada Hídrica e o Nexo Global</h1>
+                    <p>A <strong>Pegada Hídrica</strong>, conceito consolidado pela *Water Footprint Network* e amplamente divulgado pela <strong>Iberdrola</strong>, transcende a simples medição do volume de água utilizado. Ela é um indicador multidimensional que revela o consumo de água doce em toda a cadeia de suprimento de um product ou serviço.</p>
+                    
+                    <p>Vivemos sob o que os cientistas chamam de "Nexo Água-Energia-Alimento". Para produzir alimentos, precisamos de água e energia; para gerar energia, precisamos de água; e para tratar a água, precisamos de energia. Esse ciclo interdependente coloca a pegada hídrica no centro das discussões sobre a viabilidade da vida moderna e a segurança nacional de países em desenvolvimento.</p>
+
+                    <h2>A Classificação Técnica das Águas</h2>
+                    <p>A metodologia da pegada hídrica segmenta o uso em três categorias essenciais para a gestão ambiental estratégica:</p>
+                    
+                    <div class="color-grid">
+                        <div class="color-card c-green">
+                            <h3>Pegada Verde</h3>
+                            <p>Refere-se ao volume de água da chuva que fica armazenado no solo e não se transforma em escoamento superficial. É fundamental para a agricultura e silvicultura, sendo a principal fonte de hidratação das florestas naturais.</p>
+                        </div>
+                        <div class="color-card c-blue">
+                            <h3>Pegada Azul</h3>
+                            <p>Corresponde ao consumo de recursos hídricos superficiais (rios, lagos) ou subterrâneos (aquíferos). É a água retirada para irrigação artificial, processos industriais e consumo doméstico direto.</p>
+                        </div>
+                        <div class="color-card c-grey">
+                            <h3>Pegada Cinza</h3>
+                            <p>É um indicador de poluição. Representa o volume de água doce necessário para diluir os poluentes descartados em um processo produtivo até que a água retorne aos padrões de qualidade vigentes.</p>
+                        </div>
+                    </div>
+
+                    <div class="info-block">
+                        <p><strong>Impacto Socioeconômico:</strong> Segundo dados globais, a escassez hídrica pode custar a algumas regiões até 6% do seu PIB até 2050, devido a perdas na agricultura e na saúde pública. A conscientização individual é o primeiro passo para pressionar cadeias produtivas por maior transparência.</p>
+                    </div>
+
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/JoeCmouZfe0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h2>Referências e Leituras Complementares</h2>
+                    <p>Aprofunde seus conhecimentos navegando pelos portais oficiais das principais referências em sustentabilidade:</p>
+                    <div class="links-container">
+                        <a href="https://www.iberdrola.com/sustentabilidade/o-que-e-pegada-hidrica" target="_blank" class="btn-link">
+                            <span><i class="fas fa-globe-americas"></i> Iberdrola: O que é a Pegada Hídrica?</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://www.embrapa.br/agua-na-agricultura/sobre-o-tema" target="_blank" class="btn-link">
+                            <span><i class="fas fa-seedling"></i> Embrapa: Água na Agricultura</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://antigo.mma.gov.br/responsabilidade-socioambiental/producao-e-consumo-sustentavel/conceitos/consumo-sustentavel.html" target="_blank" class="btn-link">
+                            <span><i class="fas fa-leaf"></i> MMA: Conceitos de Consumo Sustentável</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-agro" class="page">
+            <div class="main-card">
+                <div class="card-header-img header-agro"></div>
+                <div class="card-content">
+                    <h1>Inovação Hídrica no Agronegócio</h1>
+                    <p>O Brasil possui uma das matrizes agrícolas mais potentes do mundo. No entanto, a <strong>Embrapa (Empresa Brasileira de Pesquisa Agropecuária)</strong> ressalta que a competitividade do setor depende intrinsecamente da resiliência climática e da gestão inteligente da água.</p>
+
+                    <p>A agricultura irrigada ocupa apenas uma pequena fração da área plantada no país, mas responde por uma produtividade desproporcionalmente maior. O desafio não é parar de irrigar, mas sim utilizar a <strong>Irrigação de Precisão</strong>. Tecnologias de sensoriamento remoto e IoT (Internet das Coisas) permitem que o produtor saiba o momento exato em que a planta entra em estresse hídrico, evitando o desperdício.</p>
+
+                    <div class="info-block block-orange">
+                        <h3>O Solo como Reservatório Vivo</h3>
+                        <p>A Embrapa defende o manejo conservacionista através do <strong>Sistema de Plantio Direto</strong>. Ao manter a palhada sobre a terra, o agricultor protege o solo contra a radiação direta, reduzindo a temperatura em até 10°C e mantendo a umidade "verde" por muito mais tempo. Isso transforma cada hectare em uma esponja natural que alimenta os aquíferos.</p>
+                    </div>
+
+                    <h2>Infográficos de Água Virtual</h2>
+                    <div class="technical-grid">
+                        <div class="tech-item">
+                            <h4>🥩 Proteína Bovina</h4>
+                            <p>A pecuária de corte é altamente intensiva. São necessários cerca de <strong>15.415 litros</strong> por quilo de carne, considerando a água bebida pelo animal e a água usada no cultivo dos grãos de sua ração.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>☕ Grãos de Café</h4>
+                            <p>Sua xícara matinal carrega <strong>140 litros</strong> de água invisível. Grande parte dessa pegada é "verde", dependendo das chuvas nas regiões serranas de Minas Gerais e São Paulo.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>📱 Eletrônicos</h4>
+                            <p>Um smartphone exige <strong>12.000 litros</strong>. A mineração de metais raros e a lavagem de placas de silício geram uma altíssima pegada cinza por contaminação química.</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>👕 Moda e Algodão</h4>
+                            <p>Uma calça jeans consome <strong>10.000 litros</strong>. O cultivo do algodão é um dos que mais demanda agrotóxicos e irrigação pesada em regiões semiáridas.</p>
+                        </div>
+                    </div>
+
+                    <p>A transição para o <strong>Agro 4.0</strong> envolve o uso de drones e bioinsumos que substituem defensivos químicos, reduzindo drasticamente a Pegada Cinza dos alimentos que chegam à sua mesa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-calculator" class="page">
+            <div class="main-card">
+                <div class="card-content">
+                    <h1>Mensuração de Impacto Individual</h1>
+                    <p>Esta calculadora utiliza médias ponderadas de consumo direto e indireto. O consumo direto (banho e torneira) representa apenas cerca de 5% da pegada total de um cidadão médio. Os outros 95% estão contidos nos produtos que você consome e na energia que utiliza.</p>
+                    
+                    <form id="water-form" onsubmit="calcularPegada(event)">
+                        <div class="section-card">
+                            <h2>💧 Dimensão Doméstica (Direta)</h2>
+                            <div>
+                                <label for="banho">Tempo de Banho Diário (minutos):</label>
+                                <input type="number" id="banho" value="15">
+                                <small>Média brasileira: 15 min.</small>
+                            </div>
+                            <div>
+                                <label for="torneira">Uso de Torneiras Diário (minutos):</label>
+                                <input type="number" id="torneira" value="10">
+                                <small>Higiene e louça.</small>
+                            </div>
+                            <div>
+                                <label for="lavagem-carro">Lavagem de Carro (vezes por mês):</label>
+                                <input type="number" id="lavagem-carro" value="1">
+                                <small>Com mangueira gasta ~216L por vez.</small>
+                            </div>
+                            <div>
+                                <label for="maquina-roupa">Máquina de Lavar Roupa (ciclos por semana):</label>
+                                <input type="number" id="maquina-roupa" value="3">
+                                <small>Gasto médio de 135L por ciclo completo.</small>
+                            </div>
+                        </div>
+
+                        <div class="section-card border-green">
+                            <h2>🚜 Dimensão Agroindustrial (Indireta)</h2>
+                            <div>
+                                <label for="carne">Consumo de Carne Vermelha (dias por semana):</label>
+                                <input type="number" id="carne" value="4">
+                                <small>Pegada hídrica massiva (~15.415L/kg).</small>
+                            </div>
+                            <div>
+                                <label for="roupas">Novas Roupas por Mês (peças):</label>
+                                <input type="number" id="roupas" value="1">
+                                <small>Foco em algodão e jeans.</small>
+                            </div>
+                            <div>
+                                <label for="energia">Energia Elétrica (kWh/mês):</label>
+                                <input type="number" id="energia" value="150">
+                                <small>Impacto das hidrelétricas.</small>
+                            </div>
+                            <div>
+                                <label for="laticinios">Consumo de Laticínios (dias por semana):</label>
+                                <input type="number" id="laticinios" value="5">
+                                <small>Leite, queijo e manteiga (1L de leite gasta ~1.000L de água).</small>
+                            </div>
+                            <div>
+                                <label for="desperdicio">Desperdício de Alimentos (frequência):</label>
+                                <select id="desperdicio" class="select-field">
+                                    <option value="0">Quase nunca jogo comida fora</option>
+                                    <option value="1">Raramente (uma vez por semana)</option>
+                                    <option value="2">Moderado (perco alimentos na geladeira)</option>
+                                    <option value="3">Alto (desperdiço restos quase diariamente)</option>
+                                </select>
+                                <small>Jogar comida fora é desperdiçar toda a água usada para produzi-la.</small>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-blue">Gerar Diagnóstico Hídrico</button>
+                    </form>
+
+                    <div id="result-card" class="result-box">
+                        <h2 id="msg-res">Resultado do Diagnóstico</h2>
+                        <div class="total-litros-text" id="total-litros">0 L</div>
+                        <div id="feedback-text" class="feedback-msg"></div>
+                        <div id="lista-dicas" class="tips-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-game" class="page">
+            <div class="main-card">
+                <div class="card-content">
+                    <h1>Simulador de Gestão Hídrica</h1>
+                    <p>O desafio a seguir simula decisões críticas de um gestor de recursos. Cada escolha altera seu nível de "Consciência Ética" e o volume total de "Água Virtual" acumulada em suas operações.</p>
+                    
+                    <div class="game-dashboard">
+                        <span>Consciência: <span id="game-score">100</span>%</span>
+                        <span>Déficit Hídrico: <span id="game-water">0</span> L</span>
+                    </div>
+
+                    <div id="game-box">
+                        <h3 id="game-question">Iniciando cenário de crise hídrica...</h3>
+                        <div id="game-options-container" class="options-container"></div>
+                        <div id="game-feedback" class="game-feedback-box"></div>
+                        <button id="next-btn" class="btn btn-agro btn-next" onclick="proximaQuestao()">Avançar para Próximo Ciclo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
